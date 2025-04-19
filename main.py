@@ -8,12 +8,12 @@ from streamlit_option_menu import option_menu
 
 import os
 
-
+# Load Diabetes's model
 diabetes_model_path = os.path.join('saved_models', 'diabetes_model.sav')
 diabetes_model = pickle.load(open(diabetes_model_path, 'rb'))
 
 
-#Load heart disease model
+# Load Heart Disease's model
 heart_disease_model_path = os.path.join('saved_models', 'heart_disease_model.sav')
 heart_disease_model = pickle.load(open(heart_disease_model_path, 'rb'))
 
