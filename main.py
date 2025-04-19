@@ -8,15 +8,11 @@ from streamlit_option_menu import option_menu
 
 import os
 
-# Assuming models are in a 'saved_models' folder in your project directory
+
 diabetes_model_path = os.path.join('saved_models', 'diabetes_model.sav')
 diabetes_model = pickle.load(open(diabetes_model_path, 'rb'))
 
-# heart_disease_model = pickle.load(
-#     open(r'C:\Users\Merlyn\Documents\Multidisease\saved_models\heart_disease_model.sav', 'rb'))
 
-# parkinsons_model = pickle.load(
-#     open(r'C:\Users\Merlyn\Documents\Multidisease\saved_models\parkinsons_model.sav', 'rb'))
 #Load heart disease model
 heart_disease_model_path = os.path.join('saved_models', 'heart_disease_model.sav')
 heart_disease_model = pickle.load(open(heart_disease_model_path, 'rb'))
